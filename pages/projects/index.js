@@ -8,10 +8,10 @@ import { getAllProjects } from "../../functions/getAllProjects";
 export default function ProjectsPage({ projects }) {
   return (
     <Layout title={"Portfolio / Projects"} description={"My Projects"}>
-      <section className="h-full max-w-5xl pt-4 mx-auto mb-16 md:pt-16">
+      <section className="h-full max-w-5xl pt-4 mx-auto mb-32 md:pt-4">
         <Link
           href="/"
-          className="flex items-center space-x-4 font-semibold pb-6 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200"
+          className="flex items-center space-x-4 font-semibold pb-10 text-gray-600 dark:text-gray-300 hover:text-gray-800 dark:hover:text-gray-200"
         >
           
           <span>{"<<<"} Back to Home</span>
