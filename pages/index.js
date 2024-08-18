@@ -2,33 +2,29 @@ import Link from "next/link";
 import React from "react";
 import Layout from "../components/Layout";
 import { motion } from "framer-motion";
-import Typical from "react-typical";
-
+import { Typewriter } from "react-simple-typewriter";
 import GithubIcon from "../components/icons/Github.js";
 import TwitterIcon from "../components/icons/Twitter.js";
 import LinkedinIcon from "../components/icons/Linkedin.js";
 
-const TypingAnimation = React.memo(
-  () => {
-    return (
-      <Typical
-        loop={4}
-        wrapper="p"
-        steps={[
-          "Frontend Developer",
-          2000,
-          "Backend Developer",
-          2000,
-          "React Developer",
-          2000,
-          "React Native Developer",
-          2000,
-        ]}
-      />
-    );
-  },
-  (props, prevProps) => true
-);
+const TypingAnimation = () => {
+  return (
+    <Typewriter
+      words={[
+        "Frontend Developer",
+        "Backend Developer",
+        "React Developer",
+        "React Native Developer",
+      ]}
+      loop={5}
+      cursor
+      cursorStyle="_"
+      typeSpeed={70}
+      deleteSpeed={50}
+      delaySpeed={1000}
+    />
+  );
+};
 
 export default function Home() {
   return (
@@ -55,7 +51,7 @@ export default function Home() {
         <section className="h-full max-w-5xl mx-auto pt-16 md:pt-8">
           <div className="flex flex-col items-center justify-center md:items-start">
             <h4 className="text-lg text-gray-800 dark:text-white">
-              <span className="text-xl font-normal">Hello, </span> I'm 
+              <span className="text-xl font-normal">Hello, </span> I'm
             </h4>
             <h1 className="mt-5 text-xl font-extrabold tracking-normal text-gray-800 uppercase md:text-4xl md:mt-3 dark:text-white">
               Ömer Faruk ÖZÇELİK
@@ -135,13 +131,13 @@ export default function Home() {
                     <div>
                       <p className="text-sm">
                         <span className="text-pink-300"> {">>"} </span> const
-                        mySkills1 = ["JavaScript", "Typescript", "React", "React Native"];{" "}
-                        
+                        mySkills1 = ["JavaScript", "Typescript", "React", "React
+                        Native"];{" "}
                       </p>
                       <p className="text-sm">
                         <span className="text-pink-300"> {">>"} </span> const
-                        mySkills2 = ["Expressjs", "Nodejs", "Mongodb", "Nextjs"];{" "}
-                        
+                        mySkills2 = ["Expressjs", "Nodejs", "Mongodb",
+                        "Nextjs"];{" "}
                       </p>
                     </div>
                   </div>
