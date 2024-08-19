@@ -28,7 +28,7 @@ const TypingAnimation = () => {
 
 export default function Home() {
   return (
-    <Layout title={"Portfolio"} description={"My Portfolio"}>
+    <Layout title={"Ömer Faruk Özçelik"} description={"My Portfolio"}>
       <motion.img
         src="/images/ball-1.svg"
         alt="ball-1"
@@ -73,7 +73,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
                 >
-                  <GithubIcon className={"w-8 h-8 fill-current"} />
+                  <GithubIcon className={"w-9 h-9 fill-current"} title="Github Profile"/>
                 </Link>
               </motion.div>
 
@@ -87,7 +87,7 @@ export default function Home() {
                   rel="noopener noreferrer"
                   className="text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
                 >
-                  <TwitterIcon className={"w-8 h-8 fill-current"} />
+                  <TwitterIcon className={"w-9 h-9 fill-current"} title="Twitter Profile"/>
                 </Link>
               </motion.div>
 
@@ -99,9 +99,9 @@ export default function Home() {
                   href="https://www.linkedin.com/in/omer-faruk-ozcelik/"
                   target={"_blank"}
                   rel="noopener noreferrer"
-                  className="text-gray-800 transition-colors duration-300 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
+                  className="text-gray-800 transition-colors duration-200 dark:text-gray-100 dark:hover:text-pinkish-200 hover:text-pinkish-200"
                 >
-                  <LinkedinIcon className={"w-8 h-8 fill-current"} />
+                  <LinkedinIcon className={"w-9 h-9 fill-current "} title="LinkedIn Profile" />
                 </Link>
               </motion.div>
             </div>
